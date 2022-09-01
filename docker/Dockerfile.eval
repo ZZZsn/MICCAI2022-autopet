@@ -1,0 +1,17 @@
+FROM python:3.8-slim
+
+RUN groupadd -r algorithm && useradd -m --no-log-init -r -g algorithm algorithm
+
+WORKDIR /opt/algorithm
+USER algorithm
+
+ENV PATH="/home/algorithm/.local/bin:${PATH}"
+
+RUN python -m pip install --user -U pip -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+COPY --chown=algorithm:algorithm requirements.txt /opt/algorithm/
+RUN python -m pip install --user numpy -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN python -m pip install --user simpleitk -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+
