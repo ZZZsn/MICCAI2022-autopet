@@ -2,7 +2,7 @@
 
 Source code for [MICCAI2022 Challenge-AutoPET](https://autopet.grand-challenge.org/evaluation/challenge/leaderboard/)
 
-Model weight file [here](https://pan.baidu.com/s/1F8Wqn_VNGpgMzchB3sjzWw) 
+Model weight file download: [here](https://pan.baidu.com/s/1F8Wqn_VNGpgMzchB3sjzWw)   
 Extraction code：auto
 
 ## Folder Description  
